@@ -8,5 +8,5 @@ import com.dtcc.intern.demo.model.UserAccount;
 
 @Repository
 public interface UserAccountRepository extends JpaRepository<UserAccount, Integer> {
-    Optional<UserAccount> findByUsername(String username);
+    Optional<UserAccount> findByEmail(String email);
 }
